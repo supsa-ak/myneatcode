@@ -4,7 +4,7 @@
     --primary: #fefeff;
     --secondary: #181b1b;
     --light: #181b1bb3;
-    --button: #c5e0e2;
+    --button: #ffeb3b;
     --montserrat: "Montserrat", sans-serif;
     --menu-speed: 0.75s;
 }
@@ -13,6 +13,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 html {
@@ -83,7 +100,7 @@ img{
 #header-img,
 #logo {
     width: 100px;
-    object-fit: fill;
+    object-fit: fills;
 }
 #logo-h{
     margin: 0 0 0 30px;
@@ -405,7 +422,7 @@ ul.nav-list,
 /*---------------- FORM --------------------------------*/
 
 .footer-container{
-    background-color: var(--button);
+    background-color: greenyellow;
     color: var(--secondary);
     padding: 2.5rem 0 2rem;
     border-radius: 10px;
@@ -476,7 +493,7 @@ ul.nav-list,
 }
 
 .footer-copyright {
-    display: none;
+    display: block;
 }
 
 /* --------------------- FOOTER END --------------------------------------------- */
@@ -491,8 +508,12 @@ ul.nav-list,
     .menu-wrap .toggler{
         display: block;
     }
+    ul.nav-list,
+    .nav-left{
+        flex-direction: column;
+    }
 
-    ul.nav-list{
+    ul.ddd-list{
         display: revert;
     }
 
